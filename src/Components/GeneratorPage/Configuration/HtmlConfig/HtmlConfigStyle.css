@@ -1,0 +1,89 @@
+.card-body{
+    margin: 0;
+    font-family: Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #ffffff;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 10px;
+overflow-y: scroll;
+height: 90vh;
+
+
+  
+}
+.card-configuration {
+
+ width: 100%;
+
+ position: relative;
+ margin-left: auto;
+ margin-right: 20px;
+ padding: ;
+
+
+}
+.form-group{
+
+
+    padding: 10px;
+}
+.form-group input {
+    background: rgba(10, 18, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 2rem;
+    width: 80%;
+    height: 3rem;
+    border: none;
+    outline: none;
+    color: #3c354e;
+    font-size: 1rem;
+    font-weight: bold;
+{
+    &::focus {
+      display: inline-block;
+      box-shadow: 0 0 0 0.2rem #b9abe0;
+      backdrop-filter: blur(12rem);
+      border-radius: 2rem;
+    }
+    &::placeholder {
+      color: #b9abe099;
+      font-weight: 100;
+      font-size: 1rem;
+    }
+
+
+}
+ 
+
+}
+.form-group select {
+    height: 40px;
+    width: 200px;
+}
+.card-header {
+    background-color: #9787f0; 
+    font-size: large;
+    color: #b9b9b9;
+
+}
+.form-group label {
+
+
+     font-size: 18px;
+}
+.savebtn{
+    background: linear-gradient(to right, #14163c 0%, #03217b 79%);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    width: 65%;
+    height: 3rem;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+
+}

@@ -1,24 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Footer from './Components/Footer/Footer';
+import Nav from './Components/Nav/Nav';
+import FolderPage from './Components/FolderPage/FolderPage';
+import Main from './Components/GeneratorPage/MainView/main';
+import Protected from './Components/Protected/protected';
+import Login from './Components/Login/Login';
+import All from './Components/Cmpt/all';
+import SignUp from './Components/SignUp/Signup';
 
-function App() {
+
+
+const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+
+          <Route path="/Login" element={<Login/>} />
+          <Route path="/signup" element={<SignUp/>} />
+          {/*<Route path="/Folder" element={<Protected  cmp={FolderPage}/>} />*/}
+          <Route path="/Generator" element={<Main/>} />
+          <Route path="/build" element={  <All />}/>
+          <Route path="/Folder" element={  <FolderPage />}/>
+
+
+
+     
+          {/* <Route path="/Form" element={<Form />} /> */}
+        </Routes>
+       
+
+      </BrowserRouter>
     </div>
   );
 }

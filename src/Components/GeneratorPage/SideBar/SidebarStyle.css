@@ -1,0 +1,96 @@
+
+ .toolbar {
+   left: 0;
+   background: white;
+   ;
+
+   height: 100vh;
+   width: 20%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   gap: 2rem;
+   display: inline-block;
+   
+
+
+ 
+ }
+ .Titlee {
+  background-color: #03217b;
+   height: 6vh;
+    color:aliceblue;
+    font-size: 30px;
+    padding: 5px;
+ }
+ .toolbar  ul {
+    
+    height:94vh;
+    overflow-y: scroll;
+    
+
+
+ }
+ .toolbar ul li {
+   margin-left: 10px;
+    margin-top: 10px;
+    list-style: none;
+    padding: 10px;
+
+    width: 90%;
+    box-shadow:  0 5px 25px rgba (0,0,0,.1);
+    transition : transform 0.5s ;
+ }
+
+ .toolbar ul li span {
+ 
+    text-align: center;
+ 
+    color:white;
+    display: inline-block;
+  
+    margin-right: 10px;
+    font-size: 20px;
+ 
+
+
+}
+
+
+.btnn {
+
+    list-style: none;
+    width: 100%;
+    transition : transform 0.5s ;
+    background: linear-gradient(to right, #14163c 0%, #03217b 79%);
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.btnn:hover {
+
+
+   transform:  scale(1.1);
+   z-index: 100;
+   box-shadow: 0 5px 25px rgba (0,0,0,.2);
+}
+.toolbar ::-webkit-scrollbar{
+
+width: 20px;
+}
+.toolbar ::-webkit-scrollbar-thumb{
+   background: linear-gradient(to right, #14163c 0%, #03217b 79%);
+   border-radius: 40px;
+
+}
+
+.toolbar ::-webkit-scrollbar-track{
+   background-color: aliceblue;
+   border-radius: 40px;
+}
+.toolbar ::-webkit-scrollbar-corner{
+
+   background-color: #050668;
+}
