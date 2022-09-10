@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { BiSearch } from "react-icons/bi";
+import React from 'react';
+import styled from 'styled-components';
+import { BiSearch } from 'react-icons/bi';
 export default function Navbar() {
   return (
     <Nav>
@@ -26,7 +26,7 @@ const Nav = styled.nav`
       span {
         margin-left: 0.5rem;
         color: #ffc107;
-        font-family: "Permanent Marker", cursive;
+        font-family: 'Permanent Marker', cursive;
         letter-spacing: 0.2rem;
       }
     }
@@ -45,14 +45,14 @@ const Nav = styled.nav`
       background-color: transparent;
       border: none;
       color: #ffc107;
-      font-family: "Permanent Marker", cursive;
+      font-family: 'Permanent Marker', cursive;
       letter-spacing: 0.3rem;
       &:focus {
         outline: none;
       }
       &::placeholder {
         color: #ffc107;
-        font-family: "Permanent Marker", cursive;
+        font-family: 'Permanent Marker', cursive;
       }
     }
   }

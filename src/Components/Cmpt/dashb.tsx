@@ -1,16 +1,16 @@
-import React, { useEffect } from "react";
-import styled from "styled-components";
-import Navbar from "./nav";
-import Profile from "./profile";
+import React, { useEffect } from 'react';
+import styled from 'styled-components';
+import Navbar from './nav';
+import Profile from './profile';
 
-import scrollreveal from "scrollreveal";
+import scrollreveal from 'scrollreveal';
 export default function Dashboard() {
   useEffect(() => {
     const sr = scrollreveal({
-      origin: "bottom",
-      distance: "80px",
+      origin: 'bottom',
+      distance: '80px',
       duration: 2000,
-      reset: false,
+      reset: false
     });
     sr.reveal(
       `
@@ -20,7 +20,7 @@ export default function Dashboard() {
     `,
       {
         opacity: 0,
-        interval: 100,
+        interval: 100
       }
     );
   }, []);
@@ -28,8 +28,7 @@ export default function Dashboard() {
     <Section>
       <Navbar />
       <div className="grid">
-        <div className="row__one">
-        </div>
+        <div className="row__one"></div>
         <div className="row__two">
           <Profile />
         </div>

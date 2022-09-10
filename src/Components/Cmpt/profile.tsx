@@ -1,11 +1,7 @@
+import React from 'react';
+import styled from 'styled-components';
 
-
-
-import React from "react";
-import styled from "styled-components";
-
-
-import { HiOutlineLocationMarker } from "react-icons/hi";
+import { HiOutlineLocationMarker } from 'react-icons/hi';
 export default function Profile() {
   return (
     <Section>
@@ -62,7 +58,7 @@ const Section = styled.section`
     h2,
     h5 {
       color: #ffc107;
-      font-family: "Permanent Marker", cursive;
+      font-family: 'Permanent Marker', cursive;
       letter-spacing: 0.3rem;
     }
     h5 {

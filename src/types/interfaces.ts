@@ -1,5 +1,4 @@
-
- export interface inputConfig {
-    color?: string;
-    width?: number;
-  }
+export interface inputConfig {
+  color?: string;
+  width?: number;
+}

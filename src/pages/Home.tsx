@@ -5,18 +5,15 @@ import Hero from '../Components/Hero/Hero';
 import { heroOne, heroTwo, heroThree } from '../Data/HeroData';
 
 const Home = () => {
-	return (
-
-
-		<>
-
-			<Nav />
-			<Hero/>
-			<Content {...heroOne} />
-			<Content {...heroTwo} />
-			<Content {...heroThree} />
-		</>
-	);
+  return (
+    <>
+      <Nav />
+      <Hero />
+      <Content {...heroOne} />
+      <Content {...heroTwo} />
+      <Content {...heroThree} />
+    </>
+  );
 };
 
 export default Home;
